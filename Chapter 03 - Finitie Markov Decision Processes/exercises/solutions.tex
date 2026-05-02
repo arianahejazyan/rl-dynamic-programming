@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+	
+	\tableofcontents
+	\newpage
+	
+	\setcounter{section}{2}
+	\section{}
+	
+	\subsection{}
+	\subsection*{Problem}
+	Devise three example tasks of your own that fit into the MDP framework,
+	identifying for each its states, actions, and rewards. Make the three examples as different
+	from each other as possible. The framework is abstract and flexible and can be applied in
+	many different ways. Stretch its limits in some way in at least one of your examples.
+	\subsection*{Solution}
+	\begin{enumerate}
+		\item \textbf{Chess Engine}: An agent which plays game of chess. States include piece positions, castling and en-passant rights. Actions are legal moves from the current position. Rewards are +1 for win, -1 for loss and 0 for draw.
+		\item \textbf{Self-Driving Car}: An autonomous vehicle agent. States include car location, street position, and pedestrian presence. Rewards are positive for approaching destination, negative for time passing, collisions, pedestrian hits, gas depletion, or rule violation.
+		\item \textbf{Pianist}: An agent that plays the piano like a musician. States are current note positions in the musical sequence. Actions are piano key presses. Rewards measure how well the music is played.
+	\end{enumerate}
+
+\end{document}
