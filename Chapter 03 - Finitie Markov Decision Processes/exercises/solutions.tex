@@ -40,4 +40,28 @@
 	\subsection*{Solution}
 	The line between agent and environment depends on our goal. If we want an agent to decide which path to take to reach our destination faster, we define actions at a higher level (choosing directions). If we want an agent to drive an automobile itself, we define the actions at a lower level (steering wheel, accelerate and brake). The choice depends on problem context, with no fundamental reason to prefer one approach to another.
 	
+	\subsection{}
+	\subsection*{Exercise}
+	Give a table analogous to that in Example 3.3, but for $p(s', r\mid s, a)$. It
+	should have columns for $s, a, s', r$, and $p(s', r\mid s, a)$, and a row for every 4-tuple for which
+	$p(s', r\mid s, a) > 0$.
+	\subsection*{Solution}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		s & a & $s'$  & $r$ & $p(s', r\mid s,a)$ \\
+		\hline
+		high & search & high & $r_{search}$ & $\alpha$  \\
+		high & search & low & $r_{search}$ & $1-\alpha$ \\
+		low & search & high  & -3& $1-\varepsilon$ \\
+		low & search & low  & $r_{search}$& $\varepsilon$ \\
+		high & wait & high & $r_{wait}$& 1  \\
+	
+	
+		low & wait & low & $r_{wait}$ & 1  \\
+		low & recharge & high & 0 & 1  \\
+	
+		\hline
+	\end{tabular}
+	
+	
 \end{document}
